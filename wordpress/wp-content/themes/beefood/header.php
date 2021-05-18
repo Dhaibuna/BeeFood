@@ -9,3 +9,7 @@
 </head>
 <body <?php body_class(); ?> >
     
+    <header>
+        <h1>DEV RESTAURANT</h1>
+        <p>nav bar à ajouter</p>
+    </header>
