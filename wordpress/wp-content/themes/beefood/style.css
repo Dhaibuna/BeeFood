@@ -6,3 +6,7 @@ Description: Theme realised during our internship at BeCode Liège in 2021, prom
 Tags: restaurant, recipes, food
 Version: 1.0
 */ 
+
+body{
+    background : yellow ;
+}

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
     <?php wp_head(); ?>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeeFood</title>
-</head>
-<body <?php body_class(); ?> >
     
-    <header>
-        <h1>DEV RESTAURANT</h1>
-        <p>nav bar à ajouter</p>
-    </header>
+</head>
+<body <?php body_class("header-collapse"); ?> >
+
+<?php do_action('after_body_open_tag'); ?>
+    
+<header>
+
+</header>
