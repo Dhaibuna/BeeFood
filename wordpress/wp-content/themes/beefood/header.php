@@ -11,7 +11,10 @@
 
 <?php do_action('after_body_open_tag'); ?>
     
-<header>
-    <nav class="main-navigation">
-    <?php wp_nav_menu(array('theme_location' => 'header_menu'));?>
+<header class="header-container">
+    <div class="row">
+        <nav class="main-navigation">
+            <?php wp_nav_menu(array('theme_location' => 'header_menu'));?>
+        </nav>
+    </div>
 </header>

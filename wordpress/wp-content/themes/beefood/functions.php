@@ -1,16 +1,23 @@
 <?php 
 
-function add_styles()
+
+function beefood_init()
 {
-    
-    wp_register_style('bootstrap', get_template_directory_uri() . "/css/bootstrap.min.css", array(), false, "all");
-    wp_enqueue_style('bootstrap');
+    // faire en sorte que wp enregistre le menu dans le dashborad, au niveau de l'apparence
 
-    wp_register_style('style', get_template_directory_uri() . "/style.css", array(), false, "all");
-    wp_enqueue_style('style');
-
+    register_nav_menu('header-container', 'header-container');
 
 }
 
-add_action('wp_enqueue_scripts', 'add_styles');
+function add_styles()
+{
+    
+    wp_register_style('style', get_template_directory_uri() . "/style.css", array(), false, "all");
+    wp_enqueue_style('style');
 
+}
+
+// Hooks
+
+add_action('wp_enqueue_scripts', 'add_styles');
+add_action('init', 'beefood_init');
