@@ -7,11 +7,29 @@ Description: Theme realised during our internship at BeCode Liège in 2021, prom
 Tags: restaurant, recipes, food
 Version: 1.0
 */
-body {
-  background: yellow;
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #292929;
 }
 
-.header-container {
+.header-container li {
   display: inline-block;
+}
+
+.header-container li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #292929;
+  color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,10 +7,27 @@ Tags: restaurant, recipes, food
 Version: 1.0
 */ 
 
-body{
-    background : yellow ;
-}
+
 
 .header-container{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #292929;
+
+}
+.header-container li{
     display: inline-block;
+
+    a{
+        color:#FFF;
+        text-decoration: none;
+    }
+    
+}
+
+footer{
+    background-color: #292929;
+    color:#FFF;
 }
