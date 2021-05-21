@@ -7,6 +7,10 @@ Description: Theme realised during our internship at BeCode Liège in 2021, prom
 Tags: restaurant, recipes, food
 Version: 1.0
 */
+body {
+  font-family: 'Poppins', 'sans serif';
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;

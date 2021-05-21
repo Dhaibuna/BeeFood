@@ -7,7 +7,9 @@ Tags: restaurant, recipes, food
 Version: 1.0
 */ 
 
-
+body{
+    font-family: 'Poppins', 'sans serif';
+}
 
 .header-container{
     display:flex;
@@ -19,6 +21,7 @@ Version: 1.0
 }
 .header-container li{
     display: inline-block;
+    
 
     a{
         color:#FFF;
