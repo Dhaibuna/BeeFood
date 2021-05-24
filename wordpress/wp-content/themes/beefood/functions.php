@@ -5,7 +5,7 @@ function beefood_init()
 {
     // faire en sorte que wp enregistre le menu dans le dashborad, au niveau de l'apparence
 
-    register_nav_menu('header-container', 'header-container');
+    register_nav_menu('header', 'header');
 
 }
 
