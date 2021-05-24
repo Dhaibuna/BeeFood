@@ -19,8 +19,4 @@
             <?php wp_nav_menu(array('theme_location' => 'header'));?>
         </nav>
     </div>
-    <div>
-        <p>For happy day</p> 
-        <h1><?php the_title() ?></h1>
-    </div>
 </header>
