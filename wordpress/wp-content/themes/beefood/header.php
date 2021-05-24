@@ -13,7 +13,7 @@
     
 <header class="header-container">
     <div>
-        <h3>Dev Restaurants</h3>
+        <h3>Beefood</h3>
     
         <nav class="main-navigation">
             <?php wp_nav_menu(array('theme_location' => 'header_menu'));?>
