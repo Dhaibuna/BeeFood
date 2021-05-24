@@ -13,7 +13,7 @@
     
 <header class="header-container">
     <div>
-        <img href="" alt="Logo de la chaine"/>
+        <h2>Dev Restaurants</h2>
     </div>
     <nav class="main-navigation">
         <?php wp_nav_menu(array('theme_location' => 'header_menu'));?>
