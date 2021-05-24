@@ -2,8 +2,9 @@
 
 <div>
 <h1>
-    <?php the_field("subtitle") ?> </br>
-    <?php the_field("main_title") ?>
+    <?php the_field("subtitle"); ?> </br>
+    <?php the_field("main_title"); ?>
+    <?php var_dump(get_field("background_image")); ?>
 <h1>
 
 </div>
