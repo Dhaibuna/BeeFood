@@ -13,10 +13,14 @@
     
 <header class="header-container">
     <div>
-        <h2>Dev Restaurants</h2>
+        <h3>Dev Restaurants</h3>
+    
+        <nav class="main-navigation">
+            <?php wp_nav_menu(array('theme_location' => 'header_menu'));?>
+        </nav>
     </div>
-    <nav class="main-navigation">
-        <?php wp_nav_menu(array('theme_location' => 'header_menu'));?>
-    </nav>
-
+    <div>
+        <p>For happy day</p> 
+        <h1><?php the_title() ?></h1>
+    </div>
 </header>
