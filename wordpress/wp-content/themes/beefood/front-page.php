@@ -15,6 +15,7 @@
             <?php the_field("main_title"); ?>
         <h1>
     </div>
+    <!-- Faire 3 cards ici pour inclure les champs des icones remplies dans le dashboard --> 
 </section>
 
 <?php
