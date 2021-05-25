@@ -1,13 +1,26 @@
 <?php get_header(); ?>
 
-<div>
-<h1>
-    <?php the_field("subtitle"); ?> </br>
-    <?php the_field("main_title"); ?>
-    <?php var_dump(get_field("background_image")); ?>
-<h1>
 
-</div>
+<?php
+//Je vais récuépérer les données avec get_field, et je les affiche dans une variable
+    $background_image = get_field("background_image");
+    $background_image_url = $background_image["url"];
+?>
+
+<section class= "style='background-image:url(<?php echo $background_image_url ?>)'">
+    <?php
+    echo '<pre>';
+    var_dump($background_image_url);
+    echo '</pre>';
+
+    ?>
+    <div>
+        <h1>
+            <?php the_field("subtitle"); ?> </br>
+            <?php the_field("main_title"); ?>
+        <h1>
+    </div>
+</section>
 
 <?php
 
