@@ -4,16 +4,11 @@
 <?php
 //Je vais récuépérer les données avec get_field, et je les affiche dans une variable
     $background_image = get_field("background_image");
-    $background_image_url = $background_image["url"];
+    
 ?>
 
-<section class= "style='background-image:url(<?php echo $background_image_url ?>)'">
-    <?php
-    echo '<pre>';
-    var_dump($background_image_url);
-    echo '</pre>';
-
-    ?>
+<section style="background-image: url('<?php echo $background_image['url']; ?>')">
+<!--<img href="http://localhost/wp-content/uploads/2021/05/banner-top.jpg"/> -->
     <div>
         <h1>
             <?php the_field("subtitle"); ?> </br>
