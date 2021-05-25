@@ -41,6 +41,8 @@ define( 'DB_COLLATE', '' );
 
 define('FS_METHOD','direct');
 
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
