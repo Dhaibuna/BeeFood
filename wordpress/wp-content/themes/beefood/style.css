@@ -15,29 +15,23 @@ body{
     display:flex;
     justify-content: center;
     align-content: center;
-  
-    background-color: #292929;
-  
+    color:#FFF;
   }
+
   .header-container li{
-    
     display: inline-block;
-    
-    
-    
   }
 
   .header-container li a{
-    
-        color:#FFF;
-        text-decoration: none;
-    
-  }
-
-  .banner-top{
-    height: 600px;
+    color:#FFF;
+    text-decoration: none;
   }
   
+  .card{
+    background-color: #FFFF;
+    color:#292929;
+
+}
   footer{
     background-color: #292929;
     color:#FFF;
