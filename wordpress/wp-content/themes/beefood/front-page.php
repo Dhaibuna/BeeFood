@@ -17,7 +17,7 @@ $background_image = get_field("background_image");
     <div class="card" style="width: 18rem;">
         <img class="card-img-left" src="assets/svg/quality-food.svg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">QUALITY FOODS</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
@@ -25,7 +25,7 @@ $background_image = get_field("background_image");
     <div class="card" style="width: 18rem;">
         <img class="card-img-middle" src="assets/svg/fastest-delivery.svg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">FASTEST DELIVERY</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
@@ -33,7 +33,7 @@ $background_image = get_field("background_image");
     <div class="card" style="width: 18rem;">
         <img class="card-img-right" src="assets/svg/original-recipes.svg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">ORIGINAL RECIPES</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
