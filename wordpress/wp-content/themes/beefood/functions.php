@@ -11,8 +11,8 @@ function beefood_init()
 
 function add_styles()
 {
-    wp_register('stylesheet', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
-    wp_enqueue_style('stylesheet');
+    wp_register('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
+    wp_enqueue_style('bootstrap');
 
     wp_register_style('style', get_template_directory_uri() . "/style.css", array(), false, "all");
     wp_enqueue_style('style');
@@ -23,3 +23,6 @@ function add_styles()
 
 add_action('wp_enqueue_scripts', 'add_styles');
 add_action('init', 'beefood_init');
+
+add_theme_support('title-tag');// affiche le nom de la page dans l'onglet
+
