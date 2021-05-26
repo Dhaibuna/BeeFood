@@ -82,16 +82,18 @@ $background_image = get_field("background_image");
 <!--Testimony-->
 <section class="container">
 
-<div class="card-body">
-    
+    <div class="card-body">
+
         <p class="card-text"><?php the_field("text_testimony"); ?></p>
         <p class="card-subtitle"><?php the_field("name_testimony"); ?></p>
     </div>
 </section>
 
+<!--Recipes Blog-->
+
 <?php if (have_posts()) : ?>
 
-    <ul>
+    <ul>a
         <?php while (have_posts()) : the_post(); ?>
             <li></li>
         <?php endwhile ?>
