@@ -8,10 +8,13 @@ Version: 1.0
 */ 
 
 body{
-    font-family: 'Poppins', 'sans serif';
+  font-family: 'Poppins', 'sans serif';
+}
+
+  .banner-top{
+    background-size:contain;
+    height: 700px;
   }
-
-
   
   .header-container{
     display:flex;
@@ -34,7 +37,8 @@ body{
     color:#292929;
 
 }
-  footer{
-    background-color: #292929;
-    color:#FFF;
-  }
+
+footer{
+  background-color: #292929;
+  color:#FFF;
+}

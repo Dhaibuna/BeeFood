@@ -1,16 +1,11 @@
 <?php
-//Je vais récuépérer les données avec get_field, et je les affiche dans une variable
+//Je vais récuépérer les données avec get_field pour les images, et je les affiche dans une variable
 $background_image = get_field("background_image");
 ?>
 
-<section style="background-image: url('<?php echo $background_image['url']; ?>')">
+<section class="banner-top" style="background-image: url('<?php echo $background_image['url']; ?>');">
     <?php get_header(); ?>
-
-    <!--<img href="http://localhost/wp-content/uploads/2021/05/banner-top.jpg"/> -->
-    <div>
-        <h1>
-            <?php the_field("subtitle"); ?> </br>
-            <?php the_field("main_title"); ?>
+        <div>
             <h1>
     </div>
 
