@@ -66,6 +66,19 @@ $background_image = get_field("background_image");
 
 
 <!--Our Menu-->
+<section class="container"> 
+    <img src=<?php echo get_field('img_1')['sizes']['thumbnail']; ?> />
+    <img src=<?php echo get_field('img_2')['sizes']['thumbnail']; ?> />
+    <img src=<?php echo get_field('img_3')['sizes']['thumbnail']; ?> />
+    <img src=<?php echo get_field('img_4')['sizes']['thumbnail']; ?> />
+    <div class="card-body">
+            <h5 class="card-title"><?php the_field("subtitle_+_title"); ?></h5>
+            <p class="card-text"><?php the_field("text"); ?></p>
+            <p class="card-link"><?php the_field("intern_link"); ?></p>
+        </div>
+</section>
+
+
 <?php if (have_posts()) : ?>
 
     <ul>
