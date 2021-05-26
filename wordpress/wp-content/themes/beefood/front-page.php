@@ -7,12 +7,12 @@ $background_image = get_field("background_image");
     <?php get_header(); ?>
 
     <!--<img href="http://localhost/wp-content/uploads/2021/05/banner-top.jpg"/> -->
-        <div>
+    <div>
+        <h1>
+            <?php the_field("subtitle"); ?> </br>
+            <?php the_field("main_title"); ?>
             <h1>
-                <?php the_field("subtitle"); ?> </br>
-                <?php the_field("main_title"); ?>
-                <h1>
-        </div>
+    </div>
 
     <!-- Icon cards -->
     <div class="row">
@@ -48,12 +48,28 @@ $background_image = get_field("background_image");
 
 </section>
 
+
+<!--Intro cf-->
 <section class="container">
     <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">test</div>
+        <div class="col-6"> <img src=<?php echo get_field('left_image')['sizes']['medium']; ?> /></div>
+        <div class="card-body">
+            <h5 class="card-title"><?php the_field("right_title"); ?></h5>
+            <p class="card-subtitle"><?php the_field("right_subtitle"); ?></p>
+            <p class="card-text"><?php the_field("right_text"); ?></p>
+            <p class="card-signature"><?php the_field("right_signature"); ?></p>
+        </div>
     </div>
 </section>
+
+<!-- 3 Restauraunts cf-->
+<section class="container"> 
+    <div>   
+        <h5><?php the_field('see_the_posts_restaurants'); ?></h5>
+    </div>
+</section>
+
+
 
 <?php if (have_posts()) : ?>
 
