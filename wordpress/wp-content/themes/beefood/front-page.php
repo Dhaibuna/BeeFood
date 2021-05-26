@@ -39,6 +39,12 @@ $background_image = get_field("background_image");
     </div>
 </section>
 
+<section class="container">
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">test</div>
+    </div>
+</section>
 
 <?php if (have_posts()) : ?>
 
