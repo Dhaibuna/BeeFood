@@ -20,8 +20,8 @@ $background_image = get_field("background_image");
             <div class="card" style="width: 15rem; height: 15rem;">
                 <img class="card-img-left" src="http://localhost/wp-content/uploads/2021/05/quality-food.svg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">QUALITY FOODS</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title"><?php the_field("icon_title_one"); ?></h5>
+                    <p class="card-text"><?php the_field("icon_text_1"); ?></p>
                 </div>
             </div>
         </div>
@@ -29,8 +29,8 @@ $background_image = get_field("background_image");
             <div class="card" style="width: 15rem; height: 15rem; ">
                 <img class="card-img-middle" src="http://localhost/wp-content/uploads/2021/05/fastest-delivery.svg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">FASTEST DELIVERY</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title"><?php the_field("icon_title_two"); ?></h5>
+                    <p class="card-text"><?php the_field("icon_text_two"); ?></p>
                 </div>
             </div>
         </div>
@@ -38,8 +38,8 @@ $background_image = get_field("background_image");
             <div class="card" style="width: 15rem; height: 15rem;">
                 <img class="card-img-right" src="http://localhost/wp-content/uploads/2021/05/original-recipes.svg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">ORIGINAL RECIPES</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title"><?php the_field("icon_title_three"); ?></h5>
+                    <p class="card-text"><?php the_field("icon_text_three"); ?></p>
                 </div>
             </div>
         </div>
