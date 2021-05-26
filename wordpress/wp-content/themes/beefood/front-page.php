@@ -1,12 +1,10 @@
 <?php
-//Je vais récuépérer les données avec get_field, et je les affiche dans une variable
+//Je vais récuépérer les données avec get_field pour les images, et je les affiche dans une variable
 $background_image = get_field("background_image");
 ?>
 
-<section style="background-image: url('<?php echo $background_image['url']; ?>')">
+<section class="banner-top" style="background-image: url('<?php echo $background_image['url']; ?>');">
     <?php get_header(); ?>
-
-    <!--<img href="http://localhost/wp-content/uploads/2021/05/banner-top.jpg"/> -->
         <div>
             <h1>
                 <?php the_field("subtitle"); ?> </br>
@@ -47,27 +45,6 @@ $background_image = get_field("background_image");
     <!-- Icon cards -->
 
 </section>
-
-<section class="container">
-    <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">test</div>
-    </div>
-</section>
-
-<?php if (have_posts()) : ?>
-
-    <ul>
-        <?php while (have_posts()) : the_post(); ?>
-            <li></li>
-        <?php endwhile ?>
-    </ul>
-
-
-<?php else : ?>
-    <h1>Pas d'article</h1>
-
-<?php endif; ?>
 
 
 <?php get_footer(); ?>
