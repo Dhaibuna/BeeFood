@@ -1,20 +1,21 @@
 <?php
 //Je vais récuépérer les données avec get_field pour les images, et je les affiche dans une variable
-$background_image = get_field("background_image");
+$background_bannertop_image = get_field("background_image");
 ?>
 
-<div class="container-fluid banner-top" style="background-image: url('<?php echo $background_image['url']; ?>');"">
+<div class="container-fluid banner-top" style="background-image: url('<?php echo $background_bannertop_image['url']; ?>');">
         <?php get_header(); ?>
             <div class="row pt-5 pb-5 bg-danger">
-                <h1>
-                    <?php the_field("subtitle"); ?> </br>
-                    <?php the_field("main_title"); ?>
-                <h1>
+                <p><?php the_field("subtitle"); ?> </p>
+                <p><?php the_field("main_title"); ?></p>
             </div>
-        <!-- Icon cards -->
-        <div class="row mt-5 pt-5 bg-primary">
+</div>
+
+<!-- Icon cards -->
+<!--<div class="container-fluid bg-secondary" style="background-image: url('');"> -->
+    <div class="mb-5 row">
             <div class="col">
-                <div class="card" style="width: 15rem; height: 15rem;">
+                <div class="card shadow rounded-lg mx-auto" style="width: 15rem; height: 15rem;">
                     <img class="card-img-left" src="http://localhost/wp-content/uploads/2021/05/quality-food.svg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title"><?php the_field("icon_title_one"); ?></h5>
@@ -23,7 +24,7 @@ $background_image = get_field("background_image");
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 15rem; height: 15rem; ">
+                <div class="card shadow rounded-lg mx-auto" style="width: 15rem; height: 15rem; ">
                     <img class="card-img-middle" src="http://localhost/wp-content/uploads/2021/05/fastest-delivery.svg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title"><?php the_field("icon_title_two"); ?></h5>
@@ -32,7 +33,7 @@ $background_image = get_field("background_image");
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 15rem; height: 15rem;">
+                <div class="card shadow rounded-lg mx-auto" style="width: 15rem; height: 15rem;">
                     <img class="card-img-right" src="http://localhost/wp-content/uploads/2021/05/original-recipes.svg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title"><?php the_field("icon_title_three"); ?></h5>
@@ -40,9 +41,10 @@ $background_image = get_field("background_image");
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Icon cards -->
-</div>
+        </div> 
+    </div>
+</div> 
+<!-- Icon cards -->
 
 <!--Intro cf-->
 <section class="container">
