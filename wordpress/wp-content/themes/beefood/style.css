@@ -11,6 +11,11 @@ body{
   font-family: 'Poppins', 'sans serif';
 }
 
+.container{
+  width: 100%;
+  height: auto;
+}
+/* Header */
   .banner-top{
     background-size:contain;
     height: 700px;
@@ -32,10 +37,14 @@ body{
     text-decoration: none;
   }
   
-  .card{
-    background-color: #FFFF;
-    color:#292929;
+/* Cards row */
 
+.cards{
+  padding-top:500px;
+}
+
+  .card{
+    color:#292929;
 }
 
 footer{
