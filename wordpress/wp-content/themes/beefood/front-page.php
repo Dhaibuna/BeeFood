@@ -58,17 +58,42 @@ $background_image = get_field("background_image");
 </section>
 
 <!-- 3 Restauraunts cf-->
-<section class="container"> 
-    <div>   
+<section class="container">
+    <div>
         <h5><?php the_field('see_the_posts_restaurants'); ?></h5>
     </div>
 </section>
 
 
 <!--Our Menu-->
+<section class="container">
+    <img src=<?php echo get_field('img_1')['sizes']['thumbnail']; ?> />
+    <img src=<?php echo get_field('img_2')['sizes']['thumbnail']; ?> />
+    <img src=<?php echo get_field('img_3')['sizes']['thumbnail']; ?> />
+    <img src=<?php echo get_field('img_4')['sizes']['thumbnail']; ?> />
+    <div class="card-body">
+        <h5 class="card-title"><?php the_field("subtitle_+_title"); ?></h5>
+        <p class="card-text"><?php the_field("text"); ?></p>
+        <p class="card-link"><?php the_field("intern_link"); ?></p>
+    </div>
+</section>
+
+
+<!--Testimony-->
+<section class="container">
+
+    <div class="card-body">
+
+        <p class="card-text"><?php the_field("text_testimony"); ?></p>
+        <p class="card-subtitle"><?php the_field("name_testimony"); ?></p>
+    </div>
+</section>
+
+<!--Recipes Blog-->
+
 <?php if (have_posts()) : ?>
 
-    <ul>
+    <ul>a
         <?php while (have_posts()) : the_post(); ?>
             <li></li>
         <?php endwhile ?>
