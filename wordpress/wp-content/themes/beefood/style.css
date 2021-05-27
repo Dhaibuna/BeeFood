@@ -39,9 +39,9 @@ body{
   
 /* Cards row */
 
-
   .card{
     color:#292929;
+    margin-top: 13.5rem;
 }
 
 .rounded-lg{
