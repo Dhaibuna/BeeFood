@@ -5,6 +5,9 @@ $background_bannertop_image = get_field("background_image")['url'];
 $background_grey_hatching = get_field("grey_hatching")['url'];
 //var_dump(get_field("icon_one"));
 $quality_food_svg = get_field('icon_one')['url'];
+$fastest_delivery_svg = get_field('icon_two')['url'];
+$original_recipes_svg = get_field('icon_three')['url'];
+
 
 ?>
 
@@ -32,7 +35,7 @@ $quality_food_svg = get_field('icon_one')['url'];
         </div>
         <div class="col">
             <div class="card  shadow rounded-lg mx-auto" style="width: 15rem; height: 15rem; ">
-                <img class="card-img-middle" src="http://localhost/wp-content/uploads/2021/05/fastest-delivery.svg" alt="Card image cap">
+                <img class="card-img-middle" src="<?php echo $fastest_delivery_svg ?>" alt="Card image cap">
                 <div class="card-body text-center">
                     <h5 class="card-title"><?php the_field("icon_title_two"); ?></h5>
                     <p class="card-text"><?php the_field("icon_text_two"); ?></p>
@@ -41,7 +44,7 @@ $quality_food_svg = get_field('icon_one')['url'];
         </div>
         <div class="col">
             <div class="card shadow rounded-lg mx-auto" style="width: 15rem; height: 15rem;">
-                <img class="card-img-right" src="http://localhost/wp-content/uploads/2021/05/original-recipes.svg" alt="Card image cap">
+                <img class="card-img-right" src="<?php echo $original_recipes_svg ?>" alt="Card image cap">
                 <div class="card-body text-center">
                     <h5 class="card-title"><?php the_field("icon_title_three"); ?></h5>
                     <p class="card-text"><?php the_field("icon_text_three"); ?></p>
@@ -102,7 +105,7 @@ $quality_food_svg = get_field('icon_one')['url'];
 
 <?php if (have_posts()) : ?>
 
-    <ul>a
+    <ul>
         <?php while (have_posts()) : the_post(); ?>
             <li></li>
         <?php endwhile ?>
