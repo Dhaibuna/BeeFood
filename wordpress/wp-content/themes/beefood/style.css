@@ -11,32 +11,57 @@ body{
   font-family: 'Poppins', 'sans serif';
 }
 
+/* Header */
+
+.restaurant-name{
+  font-size : 46px; 
+  font-weight: bold;
+  padding-left: 40px;
+
+}
+
+.header-container{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  color:#FFF;
+  font-size : 16px; 
+  font-weight: 500;
+}
+
+.header-container li{
+  display: inline-block;
+}
+
+.header-container li a{
+  color:#FFF;
+  text-decoration: none;
+}
+
 .container{
   width: 100%;
   height: auto;
 }
-/* Header */
+
+/* Banner-top */
   .banner-top{
     background-size:contain;
     height: 720px;
   }
-  
-  .header-container{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    color:#FFF;
-  }
 
-  .header-container li{
-    display: inline-block;
-  }
+.subtitle{
+  font-size: 60px;
+  font-weight: 400;
+  padding-left: 40px;
+}
 
-  .header-container li a{
-    color:#FFF;
-    text-decoration: none;
-  }
-  
+.main-title{
+font-size : 80px;
+width: 800px;
+font-weight: 600;
+padding-left: 40px;
+}
+
 /* Cards row */
 
 .icon-cards{

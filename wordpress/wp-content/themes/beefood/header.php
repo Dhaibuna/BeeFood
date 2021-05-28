@@ -11,12 +11,11 @@
 
 <?php do_action('after_body_open_tag'); ?>
     
-<header class="header-container">
-    <div>
-        <h3><?php bloginfo('name') ?></h3>
-    
-        <nav class="main-navigation">
-            <?php wp_nav_menu(array('theme_location' => 'header'));?>
-        </nav>
+<nav class="header-container navbar-expand-lg">
+    <a class="navbar-brand restaurant-name text-white" href="#"><?php bloginfo('name') ?></a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-5 navigation">
+        <?php wp_nav_menu(array('theme_location' => 'header'));?>
+        </div>
     </div>
-</header>
+</nav>

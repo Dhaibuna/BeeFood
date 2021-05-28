@@ -12,14 +12,13 @@ $quality_food_svg = get_field('icon_one')['url'];
     <div class="row">
         <?php get_header(); ?>
             <div class="row pt-5 pb-5 text-white">
-                <p><?php the_field("subtitle"); ?> </p>
-                <p><?php the_field("main_title"); ?></p>
+                <p class="subtitle"><?php the_field("subtitle"); ?> </p>
+                <p class="main-title"><?php the_field("main_title"); ?></p>
             </div>
     </div>
 </div>
 
 <!-- Icon cards -->
-  <div class="container-fluid cards-box"> 
     <div class="row icon-cards" style="background-image:url('<?php echo $background_grey_hatching ?>');">
     
         <div class="col">
@@ -50,7 +49,7 @@ $quality_food_svg = get_field('icon_one')['url'];
             </div>
         </div>
     </div>   
-<!--</div> -->
+
 </div>
 <!-- Icon cards -->
 
