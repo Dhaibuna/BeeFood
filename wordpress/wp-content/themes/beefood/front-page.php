@@ -1,14 +1,14 @@
 <?php
 //Je vais récuépérer les données avec get_field pour les images, et je les affiche dans une variable
-$background_bannertop_image = get_field("background_image");
-$background_bannertop_image_url = $background_bannertop_image['url'];
+$background_bannertop_image = get_field("background_image")['url'];
 //var_dump(get_field("black_hatching"));
-$background_grey_hatching = get_field("grey_hatching");
-$background_grey_hatching_url = $background_grey_hatching['url'];
+$background_grey_hatching = get_field("grey_hatching")['url'];
+//var_dump(get_field("icon_one"));
+$quality_food_svg = get_field('icon_one')['url'];
 
 ?>
 
-<div class="container-fluid banner-top" style="background-image: url('<?php echo $background_bannertop_image_url ?>');">
+<div class="container-fluid banner-top" style="background-image: url('<?php echo $background_bannertop_image?>');">
     <div class="row">
         <?php get_header(); ?>
             <div class="row pt-5 pb-5 text-white">
@@ -20,11 +20,11 @@ $background_grey_hatching_url = $background_grey_hatching['url'];
 
 <!-- Icon cards -->
   <div class="container-fluid cards-box"> 
-    <div class="row icon-cards" style="background-image:url('<?php echo $background_grey_hatching_url ?>');">
+    <div class="row icon-cards" style="background-image:url('<?php echo $background_grey_hatching ?>');">
     
         <div class="col">
             <div class="card shadow rounded-lg mx-auto" style="width: 15rem; height: 15rem;">
-                <img class="card-img-left" src="http://localhost/wp-content/uploads/2021/05/quality-food.svg" alt="Card image cap">
+                <img class="card-img-left" src="<?php echo $quality_food_svg ?>" alt="Card image cap">
                 <div class="card-body text-center">
                     <h5 class="card-title"><?php the_field("icon_title_one"); ?></h5>
                     <p class="card-text"><?php the_field("icon_text_1"); ?></p>
