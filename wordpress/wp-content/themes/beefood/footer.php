@@ -20,10 +20,10 @@
                         Repellat sit omnis molestiae cupiditate odio quasi! Laborum, dignissimo.</p>
 
                     <div class="socials-links">
-                        <a href="https://fr-fr.facebook.com/">facebook</a>
-                        <a href="https://twitter.com/?lang=fr">twitter</a>
-                        <a href="https://www.pinterest.fr/">pinterest</a>
-                        <a href="https://www.linkedin.com/">linkedin</a>
+                        <a href="https://fr-fr.facebook.com/"><img src="./assets/svg/facebook.svg" alt="facebook" /></a>
+                        <a href="https://twitter.com/?lang=fr"><img src="./assets/svg/twitter.svg" alt="twitter" /></a>
+                        <a href="https://www.instagram.com/?hl=fr"><img src="./assets/svg/instagram.svg" alt="instagram" /></a>
+                        <a href="https://www.linkedin.com/"><img src="./assets/svg/linkedin.svg" alt="linkedin" /></a>
                     </div>
                 </div>
             </div>
