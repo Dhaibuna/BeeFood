@@ -2,7 +2,7 @@
 
 <footer>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col top-footer-container">
                 <div class="join-news-letter">
                     <h2>JOIN OUR NEWSLETTER</h2>
@@ -61,7 +61,7 @@
                 <p>photo</p>
             </div>
 
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col bottom-footer-container">
                     <p>2021 All Rights Reserved By BeCode</p>
                 </div>
