@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col top-footer-container">
                 <div class="join-news-letter">
